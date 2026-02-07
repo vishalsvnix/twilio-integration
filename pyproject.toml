@@ -1,0 +1,25 @@
+[project]
+name = "twilio_integration"
+version = "0.0.1"
+description = "Custom Frappe Application for Twilio Integration"
+authors = [
+    {name = "Frappe", email = "developers@frappe.io"}
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {file = "license.txt"}
+
+dependencies = [
+    "twilio==6.44.2",
+    "pyngrok~=5.1.0",
+]
+
+[build-system]
+requires = ["flit_core>=3.4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.module]
+name = "twilio_integration"
+
+[tool.bench.frappe-dependencies]
+frappe = ">=15.0.0,<16.0.0"
